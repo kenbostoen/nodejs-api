@@ -4,10 +4,7 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const employees = [{
-    id: "test",
-    name: 'jeff'
-}];
+const employees = [];
 
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
